@@ -1,5 +1,4 @@
-import iziToast from 'izitoast';
-import imageUrlError from '../img/modal-x.svg';
+
 import axios from 'axios';
 
 // Визначення функцій для роботи з Local Storage безпосередньо у файлі

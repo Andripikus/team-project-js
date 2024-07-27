@@ -2,83 +2,476 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/team-project-js/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     
     <script type="module" crossorigin src="/team-project-js/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/team-project-js/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/team-project-js/assets/vendor-f92b6250.js">
+    <link rel="stylesheet" href="/team-project-js/assets/vendor-7c8ef494.css">
+    <link rel="stylesheet" href="/team-project-js/assets/index-680ea8d5.css">
   </head>
   <body>
     <header class="header">
   <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
+    
     </ul>
   </nav>
 </header>
 
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/team-project-js/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+    <main>
+      <section class="hero-section">
+    <div class="hero-container">
+        <h1 class="hero-title">Hello.<br />I'm Fullstack developer Lloyd Jefferson.</h1>
+    </div>
+    <div class="hero-list-social"> 
+        <ul class="soc-networks-list">
+            <li class="hero-list-item">
+                <a class="hero-link" href="https://www.instagram.com/goitclub/"
+            target="_blank">IG</a>
+            </li>
+            <li class="hero-list-item">
+                <a class="hero-link" href="https://www.facebook.com/goITclub/"
+            target="_blank">FB</a>
+            </li>
+            <li class="hero-list-item">
+                <a class="hero-link" href="https://www.youtube.com/c/GoIT"
+            target="_blank">YT</a>
+            </li>
+            <li class="hero-list-item">
+                <a class="hero-link" href=""
+            target="_blank">GH</a>
+            </li>
+            <li class="hero-list-item hero-list-item-email">
+                <a class="hero-link" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com></a>
+            </li>
+        </ul>
+    </div>
+</section>
+      <section id="section-about" class="about-me-section">
+  <div class="container about-me-container">
+    <h2 class="visually-hidden">About me</h2>
+    <div class="about-me-description">
+      <div class="about-me-text-wrapper">
+        <p>
+          I work with people all over the world to create impressive and
+          <span class="about-me-span-red">functional</span>
+          <span class="about-me-span-grey">websites</span> that reflect each
+          client's unique personality.
+        </p>
+      </div>
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+      <picture>
+        <source
+          srcset="/team-project-js/assets/aboutme-desktop-2x-min-f59439d0.png 2x, /team-project-js/assets/aboutme-desktop-min-904f7178.png 1x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/team-project-js/assets/aboutme-tab@2x-min-2270b6a0.png 2x, /team-project-js/assets/aboutme-tab-min-eba1a292.png 1x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/team-project-js/assets/aboutme-mob@2x-min-fae8f682.png 2x, /team-project-js/assets/aboutme-mob-min-4a25038f.png 1x"
+          media="(min-width: 375px)"
+        />
+        <img
+          class="aboutme-img"
+          src="/team-project-js/assets/aboutme-mob-min-4a25038f.png"
+          alt="photo of FullStack developer"
+          width="343"
+          height="500"
+        />
+      </picture>
+    </div>
+    <div class="about-me-info">
+      <ul class="accordeon-list accordion-container">
+        <li class="ac">
+          <div class="accordeon-title ac-header">
+            <h3 class="title-text">About me</h3>
+            <button type="button" class="title-current ac-trigger">
+              <svg class="title-icon is-active" width="18" height="18">
+                <use href="/team-project-js/assets/icons-42400b4d.svg#icon-arrow-up"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordeon-content ac-panel">
+            <p class="accordeon-content-text">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages and technologies, always ready to
+              improve my skills. I always follow the latest trends and look for
+              unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </p>
+            <p class="accordeon-content-text">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work. <br />
+              I am always looking for opportunities for self-improvement. I
+              actively study new technologies and practices to stay abreast of
+              the latest innovations. I have a strong understanding of various
+              programming languages, frameworks and architectural concepts that
+              allow me to create efficient and scalable software.
+            </p>
+          </div>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="ac">
+          <div class="accordeon-title ac-header">
+            <h3 class="title-text accent-color-gray">Role</h3>
+            <button type="button" class="title-current ac-trigger">
+              <svg class="title-icon" width="18" height="18">
+                <use href="/team-project-js/assets/icons-42400b4d.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordeon-content ac-panel hidden">
+            <ul class="accordeon-content-role-list">
+              <li>Frontend development</li>
+              <li>HeadlessCMS,Wordpress</li>
+              <li>Blender(enjoy)</li>
+            </ul>
+          </div>
+        </li>
+        <li class="ac">
+          <div class="accordeon-title ac-header">
+            <h3 class="title-text accent-color-gray">Education</h3>
+            <button type="button" class="title-current ac-trigger">
+              <svg class="title-icon" width="18" height="18">
+                <use href="/team-project-js/assets/icons-42400b4d.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordeon-content ac-panel hidden">
+            <ul class="accordeon-content-education-list">
+              <li>
+                2018 - 2019 / Frontend Development Diploma, GoIT IT<br />
+                School, New York
+              </li>
+              <li>
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT<br />
+                School, New York
+              </li>
+              <li>
+                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/team-project-js/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    <div class="about-me-swiper-container">
+      <div class="about-me-skills swiper my-thumbs">
+        <ul class="swiper-list swiper-wrapper">
+          <li class="swiper-slide swiper-content-wrap">
+            <p>HTML</p>
+          </li>
+          <li class="swiper-slide swiper-content-wrap">
+            <p>CSS</p>
+          </li>
+          <li class="swiper-slide swiper-content-wrap">
+            <p>JavaScript</p>
+          </li>
+          <li class="swiper-slide swiper-content-wrap">
+            <p>React</p>
+          </li>
+          <li class="swiper-slide swiper-content-wrap">
+            <p>Node.js</p>
+          </li>
+          <li class="swiper-slide swiper-content-wrap">
+            <p>React Native</p>
+          </li>
+          <li class="swiper-slide swiper-content-wrap">
+            <p>Soft skills</p>
+          </li>
+        </ul>
+      </div>
+      <button class="swiper-arrow swiper-next" type="button">
+        <svg class="swiper-arrow-svg">
+          <use href="/team-project-js/assets/icons-42400b4d.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
 
+      <section class="benefits">
+    <div class="benefits-container container">
+      <div class="benefits-wrap-title">
+        <h2 class="benefits-title">Benefits of working with me</h2>
+      </div>
+      <div class="benefits-wrap-list">
+        <ul class="benefits-list">
+          <li class="benefits-item">
+            <div class="benefits-wrap-icon">
+              <svg class="benefits-icon" width="24" height="24">
+                <use href="/team-project-js/assets/icons-42400b4d.svg#icon-expertise"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-subtitle">Expertise</h3>
+            <p class="benefits-text">
+              As a highly experienced developer, I have deep knowledge of
+              programming and website development.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-wrap-icon">
+              <svg class="benefits-icon" width="24" height="24">
+                <use href="/team-project-js/assets/icons-42400b4d.svg#icon-communication"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-subtitle">Communication</h3>
+            <p class="benefits-text">
+              Understanding your needs and wants is my priority and I am
+              always open to discussions and corrections.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-wrap-icon">
+              <svg class="benefits-icon" width="24" height="24">
+                <use href="/team-project-js/assets/icons-42400b4d.svg#icon-art"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-subtitle">Art</h3>
+            <p class="benefits-text">
+              Thanks to my creative nature, I am ready to accept challenges
+              and help you bring your ideas to life.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-wrap-icon">
+              <svg class="benefits-icon" width="24" height="24">
+                <use href="/team-project-js/assets/icons-42400b4d.svg#icon-execution"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-subtitle">Urgent execution</h3>
+            <p class="benefits-text">
+              I understand how important time is to you. Ready to work quickly
+              and efficiently, without reducing the quality of work.
+            </p>
+          </li>
+        </ul>
+        <a class="benefits-btn" hreh="#work-together">Order the project</a>
+      </div>
+    </div>
+  </section>
+      <section id="projects" class="projects">
+    <div class="projects-conteiner container">
+        <h3 class="title">Projects</h3>
+
+        <div class="projects-swiper-slide1">
+            <div class="wrap-projects">
+                <div class="wrap-content">
+                    <ul class="list-projects">
+                        <li class="list-item-projects">#react</li>
+                        <li class="list-item-projects">#js</li>
+                        <li class="list-item-projects">#node js</li>
+                        <li class="list-item-projects">#git</li>
+                    </ul>
+                    <p class="projects-text">Programming Across Borders: Ideas, Technologies, Innovations</p>
+                    <a href="https://github.com/Dexter-24/Project_CodeCrafters02" target="_blank">
+                        <button class="projects-btn" type="button">See project</button>
+                    </a>
+                </div>
+                <div class="wrap-image">
+                <picture>
+                    <source srcset="/team-project-js/assets/project1-desktop-tab@2x-c84cf753.png 2x, /team-project-js/assets/project1-desktop-tab-23827c5f.png 1x"
+                        media="(min-width: 1440px)" />
+                    <source srcset="/team-project-js/assets/project1-desktop-tab@2x-c84cf753.png 2x, /team-project-js/assets/project1-desktop-tab-23827c5f.png 1x" media="(min-width: 768px)" />
+                    <source srcset="/team-project-js/assets/project1-mob@2x-min-abf57699.png 2x, /team-project-js/assets/project1-mob-min-1e1856eb.png 1x" media="(min-width: 375px)" />
+                    <img class="projects-img" src="/team-project-js/assets/project1-mob-min-1e1856eb.png" alt="mobile application reading books" width="311"
+                        height="195" />
+                </picture>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="projects-swiper-slide2">
+            <div class="wrap-projects">
+                <div class="wrap-content">
+                    <ul class="list-projects">
+                        <li class="list-item-projects">#react</li>
+                        <li class="list-item-projects">#js</li>
+                        <li class="list-item-projects">#node js</li>
+                        <li class="list-item-projects">#git</li>
+                    </ul>
+                    <p class="projects-text">Programming Across Borders: Ideas, Technologies, Innovations</p>
+                    <a href="https://github.com/Dexter-24/Project_CodeCrafters02" target="_blank">
+                        <button class="projects-btn" type="button">See project</button>
+                    </a>
+                </div>
+                <div class="wrap-image">
+                    <picture>
+                        <source srcset="./img/project2-desktop-tab@2x.png 2x, ./img/project2-desktop-tab.png 1x"
+                            media="(min-width: 1440px)" />
+                        <source srcset="./img/project2-desktop-tab@2x.png 2x, ./img/project2-desktop-tab.png 1x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./img/project2-mob@2x-min.png 2x, ./img/project2-mob-min.png 1x"
+                            media="(min-width: 375px)" />
+                        <img class="projects-img" src="./img/project2-mob-min.png" alt="petlove" width="311"
+                            height="195" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-swiper-slide3">
+            <div class="wrap-projects">
+                <div class="wrap-content">
+                    <ul class="list-projects">
+                        <li class="list-item-projects">#react</li>
+                        <li class="list-item-projects">#js</li>
+                        <li class="list-item-projects">#node js</li>
+                        <li class="list-item-projects">#git</li>
+                    </ul>
+                    <p class="projects-text">Programming Across Borders: Ideas, Technologies, Innovations</p>
+                    <a href="https://github.com/Dexter-24/Project_CodeCrafters02" target="_blank">
+                        <button class="projects-btn" type="button">See project</button>
+                    </a>
+                </div>
+                <div class="wrap-image">
+                    <picture>
+                        <source srcset="./img/project3-desktop-tab@2x.png 2x, ./img/project3-desktop-tab.png 1x"
+                            media="(min-width: 1440px)" />
+                        <source srcset="./img/project3-desktop-tab@2x.png 2x, ./img/project3-desktop-tab.png 1x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./img/project3-mob@2x-min.png 2x, ./img/project3-mob-min.png 1x"
+                            media="(min-width: 375px)" />
+                        <img class="projects-img" src="./img/project3-mob-min.png" alt="registration form" width="311" height="195" />
+                    </picture>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="arrow">
+        
+            <div class="arrow-right">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5 12H4.50001" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M10.5 18L4.5 12L10.5 6" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="arrow-right">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 12H20.5" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M14.5 6L20.5 12L14.5 18" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+    </div>
+</section>
+      
+      
+      <section class="reviews" id="reviews">
+  <h2 class="reviews-title">Reviews</h2>
+  <div class="reviews-swiper-container">
+    <div class="swiper-wrapper" id="swiper-wrapper"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <div class="footer-banner">
+      <picture class="responsive-img">
+        <source
+          srcset="/team-project-js/assets/footer-desktop-tab@2x-50788de3.png 2x, data:image/png;base64,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 1x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/team-project-js/assets/footer-desktop-tab@2x-50788de3.png 2x, data:image/png;base64,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 1x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/team-project-js/assets/footer-mob@2x-min-66e629f4.png 2x, data:image/png;base64,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 1x"
+          media="(min-width: 375px)"
+        />
+        <img
+          class="footer-img"
+          src="data:image/png;base64,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"
+          alt="photo Jefferson"
+          width="343"
+          height="500"
+        />
+      </picture>
+      <h2 class="footer-title">Let's <span class="title-accent">work</span></h2>
+      <h2 class="footer-title">together</h2>
+    </div>
+    <form class="footer-form">
+      <input
+        class="footer-form-input"
+        id="user-email"
+        type="email"
+        name="email"
+        placeholder="clients@gmail.com"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        autocomplete="off"
+      />
+      <input
+        class="footer-form-input"
+        id="user-comment"
+        type="text"
+        name="comments"
+        placeholder="comments"
+        autocomplete="off"
+      />
+      <button class="footer-form-btn" id="form-btn" type="submit">Send</button>
+    </form>
+    <address class="footer-bottom">
+      <ul class="contacts">
+        <li class="contacts-item contacts-mail">
+          <a class="contacts-link" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="contacts-item contacts-phone">
+          <a class="contacts-link" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+  <div class="backdrop">
+    <div class="modal">
+      <div class="modal-box">
+        <button class="close-btn" type="button">
+          <svg class="icon-close" width="22" height="22">
+            <use href="/team-project-js/assets/modal-x-5913f5bd.svg#icon-modal-x"></use>
+          </svg>
+        </button>
+        <h3 class="modal-title"></h3>
+        <p class="modal-message"></p>
+      </div>
+    </div>
+  </div>
+</footer>
 
     
   </body>
